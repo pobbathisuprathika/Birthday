@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080609">
+  <meta name="color-scheme" content="dark">
+
+  <title>Happy Birthday Kanna ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="background-glow"></div>
+
+  <!-- PAGE 1: HI KANNA -->
+
+  <section class="screen active" id="intro">
+
+    <article class="card intro-card">
+
+      <p class="eyebrow">A little surprise for you</p>
+
+      <h1 class="intro-title">Hi Kanna ❤️</h1>
+
+      <p class="lede">
+        Someone special deserves a special day.
+      </p>
+
+      <div class="photo-frame intro-photo">
+        <img src="images/firstpageimage.jpg" alt="A special photo">
+      </div>
+
+      <button class="btn" type="button" data-next="birthday">
+        ❤️ HBD Kanna
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 2: HAPPY BIRTHDAY -->
+
+  <section class="screen birthday-screen" id="birthday">
+
+    <div class="floating-hearts" aria-hidden="true"></div>
+
+    <article class="card birthday-card">
+
+      <p class="eyebrow">Today is all about you</p>
+
+      <h1 class="birthday-title">Happy Birthday</h1>
+
+      <h1 class="name-title">Kanna ❤️</h1>
+
+      <p class="lede">
+        May your special day be filled with happiness,
+        beautiful memories and endless smiles.
+      </p>
+
+      <div class="photo-frame birthday-photo">
+        <img src="images/secondpageimage.jpg" alt="Birthday memory">
+      </div>
+
+      <button class="btn" type="button" data-next="landing">
+        UR's Day ❤️
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 3: IT'S A SPECIAL DAY -->
+
+  <section class="screen" id="landing">
+
+    <article class="card">
+
+      <p class="eyebrow">For Kanna</p>
+
+      <h1>It's a special day</h1>
+
+      <p class="lede">
+        A little celebration, saved just for you.
+      </p>
+
+      <button class="btn" type="button" data-next="surprise">
+        Next
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 4: STAY CLOSE -->
+
+  <section class="screen" id="surprise">
+
+    <article class="card">
+
+      <p class="eyebrow">Stay close</p>
+
+      <h1>Ready for a surprise?</h1>
+
+      <p class="lede">
+        The room is quiet. The lights are waiting.
+        Let's make this moment beautiful.
+      </p>
+
+      <button class="btn" type="button" data-next="hearts">
+        Turn on lights
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 5: HEARTS -->
+
+  <section class="screen screen-glow" id="hearts">
+
+    <div class="lights"></div>
+
+    <div class="hearts" id="hearts-layer" aria-hidden="true"></div>
+
+    <article class="card">
+
+      <p class="eyebrow">In full color</p>
+
+      <h1>Let the colors fly</h1>
+
+      <p class="lede">
+        Red hearts, gathered especially for you.
+      </p>
+
+      <button class="btn" type="button" id="fly-btn">
+        ❤️ Fly Hearts
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 6: ALMOST HERE -->
+
+  <section class="screen" id="almost">
+
+    <article class="card">
+
+      <p class="eyebrow">One step away</p>
+
+      <h1>Almost here</h1>
+
+      <p class="lede">
+        The words have been waiting their turn.
+        Something special is waiting for you.
+      </p>
+
+      <button class="btn" type="button" data-next="letter">
+        Show the message
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 7: MY DEAR KANNA -->
+
+  <section class="screen" id="letter">
+
+    <div class="letter-hearts" aria-hidden="true">
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+    </div>
+
+    <article class="card card-letter">
+
+      <p class="eyebrow">A wish from my heart</p>
+
+      <h1 class="dear-title">My Dear Kanna ❤️</h1>
+
+      <div class="heart-divider">♥ ♥ ♥</div>
+
+      <blockquote>
+        Wishing you a birthday filled with comfort,
+        laughter, and good company. May your health
+        stay strong, your worries stay light, and
+        your year be full of gentle blessings and
+        good fortune.
+      </blockquote>
+
+      <button class="btn btn-wide" type="button" data-next="memories">
+        OUR Memories ❤️
+      </button>
+
+    </article>
+
+  </section>
+
+
+  <!-- PAGE 8: OUR MEMORIES -->
+
+  <section class="screen screen-memories" id="memories">
+
+    <div class="memories-wrap">
+
+      <p class="eyebrow">Every moment matters</p>
+
+      <h1 class="moments">Moments in Time</h1>
+
+      <div class="slider">
+
+        <button class="arrow prev" type="button" id="prev-slide" aria-label="Previous memory">
+          &#8592;
+        </button>
+
+        <div class="viewport" id="viewport">
+
+          <figure class="slide">
+            <img src="images/slide1.png" alt="Memory 1">
+            <figcaption>Happy Birthday, Kanna ❤️</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/slide2.jpg" alt="Memory 2">
+            <figcaption>May your smile never fade</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/slide3.jpg" alt="Memory 3">
+            <figcaption>This day is yours</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/slide4.jpg" alt="Memory 4">
+            <figcaption>Wishing you pure joy</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/slide5.jpg" alt="Memory 5">
+            <figcaption>Celebrate every moment</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="images/slide6.jpeg" alt="Memory 6">
+            <figcaption>With love, today and always</figcaption>
+          </figure>
+
+        </div>
+
+        <button class="arrow next" type="button" id="next-slide" aria-label="Next memory">
+          &#8594;
+        </button>
+
+      </div>
+
+      <div class="dots" id="dots" aria-label="Memory slides"></div>
+
+      <p class="hint">
+        Tap a photo to see a little wish ❤️
+      </p>
+
+      <button class="btn final-button" id="final-next" type="button" hidden>
+        One Last Message ❤️
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 9: FINAL MESSAGE -->
+
+  <section class="screen final-screen" id="final">
+
+    <div class="final-hearts" aria-hidden="true">
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+    </div>
+
+    <article class="card final-card">
+
+      <p class="eyebrow">A little something before I go</p>
+
+      <h1 class="final-title">
+        Be Strong.<br>
+        Be Happy. ❤️
+      </h1>
+
+      <div class="heart-divider">♥ ♥ ♥</div>
+
+      <p class="final-message">
+        Thanks for coming into my life.
+        Keep smiling, keep shining and never
+        stop being the wonderful person you are.
+      </p>
+
+      <p class="goodbye">
+        Bye Kanna! Have a good day. ❤️
+      </p>
+
+      <div class="photo-frame final-photo">
+        <img src="images/finalimage.jpg" alt="One last special memory">
+      </div>
+
+      <p class="small-note">
+        With lots of love ❤️
+      </p>
+
+    </article>
+
+  </section>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
